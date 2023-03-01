@@ -1,0 +1,14 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.22.5.12:8999
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

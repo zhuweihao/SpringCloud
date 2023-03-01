@@ -1,0 +1,11 @@
+server:
+  port: 93
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.22.5.12:8999
+server-url:
+  nacos-user-service: http://nacos-provider
