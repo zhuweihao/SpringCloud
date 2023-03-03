@@ -20,7 +20,7 @@ public class testRedis {
     private RedisTemplate<String, String> redisTemplate;
     @Test
     public void testRedis(){
-        String zhuweihao = redisTemplate.opsForValue().get("zhuweihao");
-        System.out.println("zhuweihao = " + zhuweihao);
+
+        redisTemplate.opsForValue().set("auth_token:zhuweihao","1");
     }
 }
