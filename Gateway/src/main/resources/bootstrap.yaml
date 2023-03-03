@@ -1,0 +1,16 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.22.5.12:8999
+      config:
+        server-addr: 172.22.5.12:8999
+        file-extension: yaml #指定配置文件类型
+        group: gateway
+  redis:
+    host: 172.22.5.12
+    port: 6380
